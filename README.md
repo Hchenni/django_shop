@@ -1,5 +1,5 @@
-#May 18, 2018, 
-section 2, lecture 6 
+#May 20, 2018, 
+section 2, lecture 8 
 
 
 #Django2.0.5
@@ -38,13 +38,15 @@ docker-compose exec web python manage.py createsuperuser
 16. docker run -p 8000:8000 [image name]
 17. docker-compose up --build
 18. docker-compose up -d database 
-19. docker-compose run --rm database psql -U postgres -h database; create database [name]
+19. docker-compose run --rm database psql -U postgres -h database; 
+    create database [name]
 20. docker-compose build web 
 21. docker-compose up -d web 
 22. docker-compose exec web python manage.py makemigrations books
 23. docker-compose exec web python manage.py sqlmigrate books 0001 
 24. docker-compose exec web python manage.py migrate
 25. docker-compose exec web python manage.py createsuperuser
+25. docker-compose exec web python manage.py shell
 
 #starts individually
 0. docker-compose up --build
