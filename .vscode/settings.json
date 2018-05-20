@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/hal/django2/bin/python",
+    "python.linting.pylintEnabled": false
+}
