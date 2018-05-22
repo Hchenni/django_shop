@@ -34,14 +34,31 @@
         <p>{{category.description}}</p>
     </div>
     {% else %}
-        <img src="{% static 'img/banner.jpg' %}" alt="">
+        <img src="{% static 'img/banner.jpg' %}" alt="Our Products Collection">
     </div>
     <br>
     <div>
-        <h1></h1>
-        <p></p>
+        <h1>Our Products Collection</h1>
+        <p>Finding the perfect cushion for your room can intantly add to the levels of comfort.</p>
     </div>
     {% endif %}
+    <div>
+        <div>
+
+            {% for product in products %}
+              <div>
+                <div>
+                    <a href=""><img src="{{product.image.url}}" alt="{{product.name}}"></a>
+                    <div>
+                        <h4>{{product.name}}</h4>
+                        <p>{{product.price}}</p>
+                    </div>
+                </div>
+              </div>
+             {% endfor %}
+
+        </div>
+    </div>
 
 {% endblock %}
 
