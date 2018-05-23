@@ -20,6 +20,7 @@
     {% if category %}
         <div>
             <div>
+                Category
                 <p><a href="{% url 'shop:allProdCat' %}">Our Product Collection</a> | {{ category.name }}</p>
             </div>
         </div>
@@ -33,7 +34,7 @@
         <h1>{{category.name}}</h1>
         <p>{{category.description}}</p>
     </div>
-    {% else %}
+        {% else %}
         <img src="{% static 'img/banner.jpg' %}" alt="Our Products Collection">
     </div>
     <br>
