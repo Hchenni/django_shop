@@ -1,5 +1,5 @@
-#May 20, 2018, 
-section 2, lecture 8 
+#May 29, 2018, Tues 
+section 2, lecture 12 beg. 
 
 
 #Django2.0.5
@@ -167,3 +167,8 @@ python manage.py runserver
 \c: connects to database
 \d+ <tablename>
 \x: expanded display
+#--------------------------------
+#git
+from django.conf import settings
+dir(settings)
+settings.name
