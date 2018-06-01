@@ -155,10 +155,15 @@ docker-compose logs web
 #virtualenv
 source ~/venv3/bin/activate
 
-#django version
+#--------------------------------
+#django 
 python -m django --version
 python manage.py startapp books
 python manage.py runserver
+
+from django.conf import settings
+dir(settings)
+settings.name
 
 #--------------------------------
 #postgresql
@@ -169,6 +174,7 @@ python manage.py runserver
 \x: expanded display
 #--------------------------------
 #git
-from django.conf import settings
-dir(settings)
-settings.name
+git push -u origin dev --tags
+
+**tags**
+git tag -a v1.4 -m "my version 1.4"
