@@ -1,5 +1,5 @@
-#May 29, 2018, Tues 
-section 2, lecture 12 beg. 
+#May 31, 2018, Thursd 
+section 2, lecture 14 beg. 
 
 
 #Django2.0.5
@@ -160,6 +160,7 @@ source ~/venv3/bin/activate
 python -m django --version
 python manage.py startapp books
 python manage.py runserver
+python manage.py collectstatic
 
 from django.conf import settings
 dir(settings)
