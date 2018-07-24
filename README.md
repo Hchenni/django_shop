@@ -1,9 +1,10 @@
-#May 31, 2018, Thursd 
-section 2, lecture 14 beg. 
+#Udemy Develop a Shopping cart website with Django2
+7/22/2018, Sun 
+ecture 17
 
 
 #Django2.0.5
-source ~/django2/bin/activate
+source ~/django2/bin/activate; cd  ~/Documents/projects/visual_code/Django/ecommerce/perfectcushion
 
 #Super User
 username: hal
@@ -124,6 +125,11 @@ docker-compose up -d
 #service
 docker-compose [start,stop,restart] [service]
 
+#look at the last container
+docker ps -l
+
+#create an image from container
+docker commit <container id> perfectcushion_web:<tag>
 #--------------------------------
 #database
 #connecting to database container
@@ -179,3 +185,12 @@ git push -u origin dev --tags
 
 **tags**
 git tag -a v1.4 -m "my version 1.4"
+
+**Delete Git Branch**
+git branch -d the_local_branch
+
+**To remove a remote branch** (if you know what you are doing!)
+git push origin :the_remote_branch
+
+or simply use the new syntax (v1.7.0)
+git push origin --delete the_remote_branch

@@ -20,7 +20,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cart',
     'shop',
+    'search_app',
 ]
 
 MIDDLEWARE = [
@@ -39,7 +41,11 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #'/home/hal/Documents/projects/visual_code/Django/ecommerce/perfectcushion/shop/templates/'
-        'DIRS': [os.path.join(BASE_DIR, 'shop', 'templates/')],
+        'DIRS': [
+                 os.path.join(BASE_DIR, 'shop', 'templates/'),
+                 os.path.join(BASE_DIR, 'cart', 'templates/'),
+                 os.path.join(BASE_DIR, 'search_app', 'templates/'),
+                ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
