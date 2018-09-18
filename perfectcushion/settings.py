@@ -20,7 +20,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'stripe',
+    'cart',
     'shop',
+    'search_app',
 ]
 
 MIDDLEWARE = [
@@ -39,7 +42,11 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #'/home/hal/Documents/projects/visual_code/Django/ecommerce/perfectcushion/shop/templates/'
-        'DIRS': [os.path.join(BASE_DIR, 'shop', 'templates/')],
+        'DIRS': [
+                 os.path.join(BASE_DIR, 'shop', 'templates/'),
+                 os.path.join(BASE_DIR, 'cart', 'templates/'),
+                 os.path.join(BASE_DIR, 'search_app', 'templates/'),
+                ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -48,6 +55,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'shop.context_processors.menu_links',
+                'cart.context_processors.counter',
             ],
         },
     },
@@ -118,3 +126,5 @@ MEDIA_URL = '/media/'
 #/home/hal/Documents/projects/visual_code/Django/ecommerce/perfectcushion/static/media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static','media')
 
+STRIPE_PUBLISHABLE_KEY = 'pk_test_NHaWScNKrBj7SNURMwdIeaYF'
+STRIPE_SECRET_KEY = 'sk_test_kbcSQGO1FXbEaPjUtVaCPBEC'
