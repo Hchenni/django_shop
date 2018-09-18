@@ -1,6 +1,6 @@
 #Udemy Develop a Shopping cart website with Django2
-7/22/2018, Sun 
-ecture 17
+9/17/2018, Monday 
+Lecture 17
 
 
 #Django2.0.5
