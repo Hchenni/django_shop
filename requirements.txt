@@ -5,3 +5,4 @@ pytz
 gunicorn
 django-debug-toolbar
 django-extensions
+stripe

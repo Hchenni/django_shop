@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'stripe',
     'cart',
     'shop',
     'search_app',
@@ -125,3 +126,5 @@ MEDIA_URL = '/media/'
 #/home/hal/Documents/projects/visual_code/Django/ecommerce/perfectcushion/static/media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static','media')
 
+STRIPE_PUBLISHABLE_KEY = 'pk_test_NHaWScNKrBj7SNURMwdIeaYF'
+STRIPE_SECRET_KEY = 'sk_test_kbcSQGO1FXbEaPjUtVaCPBEC'

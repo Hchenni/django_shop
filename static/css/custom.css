@@ -114,6 +114,7 @@ body {
 	border: 0px !important;
 	background-image: none !important;
 }
+
 .stripe-button-el span {
 	display: : block;
 	position: relative;
@@ -126,6 +127,7 @@ body {
 	background-image: none !important;
 	background: none !important;
 }
+/*
 .errorlist li {
 	color: red;
 	font-weight: bold;
@@ -157,3 +159,4 @@ body {
 	letter-spacing: .2em;
 	font-size: 12px;
 }
+*/
